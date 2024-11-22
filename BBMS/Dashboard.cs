@@ -19,9 +19,15 @@ namespace BBMS
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 obj = new Form1();    
+            Form1 obj = new Form1();
             obj.Show();
-            this.Close();   
+            this.Close();
+        }
+
+        private void addNewDonorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddNewDonor addNewDonor = new AddNewDonor();    
+            addNewDonor.Show();
         }
     }
 }

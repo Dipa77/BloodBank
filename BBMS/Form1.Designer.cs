@@ -36,7 +36,6 @@
             txtPassword = new TextBox();
             cbTC = new CheckBox();
             btnLogin = new Button();
-            linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
             linkLabel3 = new LinkLabel();
             SuspendLayout();
@@ -45,67 +44,73 @@
             // 
             textBox1.BackColor = Color.LightGray;
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe Script", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Font = new Font("Segoe Script", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.ForeColor = Color.Maroon;
-            textBox1.Location = new Point(388, 79);
+            textBox1.Location = new Point(282, 23);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(209, 67);
+            textBox1.Size = new Size(386, 106);
             textBox1.TabIndex = 0;
             textBox1.Text = "Raktdaan";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(375, 132);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(327, 132);
             label1.Name = "label1";
-            label1.Size = new Size(212, 23);
+            label1.Size = new Size(281, 31);
             label1.TabIndex = 1;
             label1.Text = "Be a Donor, Be  a Saviour";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 13.8F);
             label2.Location = new Point(418, 205);
             label2.Name = "label2";
-            label2.Size = new Size(69, 20);
+            label2.Size = new Size(109, 29);
             label2.TabIndex = 2;
             label2.Text = "Hi, there!";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(361, 234);
+            label3.Font = new Font("Microsoft Sans Serif", 13.8F);
+            label3.Location = new Point(292, 234);
             label3.Name = "label3";
-            label3.Size = new Size(236, 20);
+            label3.Size = new Size(376, 29);
             label3.TabIndex = 3;
             label3.Text = "Please fill up the following details:";
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(401, 294);
+            txtUsername.Font = new Font("Microsoft Sans Serif", 13.8F);
+            txtUsername.Location = new Point(327, 294);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Username";
-            txtUsername.Size = new Size(125, 27);
+            txtUsername.Size = new Size(281, 34);
             txtUsername.TabIndex = 4;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(401, 347);
+            txtPassword.Font = new Font("Microsoft Sans Serif", 13.8F);
+            txtPassword.Location = new Point(327, 347);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.PlaceholderText = "Password";
-            txtPassword.Size = new Size(125, 27);
+            txtPassword.Size = new Size(284, 34);
             txtPassword.TabIndex = 5;
             // 
             // cbTC
             // 
             cbTC.AutoSize = true;
+            cbTC.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbTC.Location = new Point(327, 406);
             cbTC.Name = "cbTC";
-            cbTC.Size = new Size(261, 24);
+            cbTC.Size = new Size(288, 24);
             cbTC.TabIndex = 6;
             cbTC.Text = "I agree to all terms and conditions.";
             cbTC.UseVisualStyleBackColor = true;
@@ -113,55 +118,46 @@
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.LimeGreen;
-            btnLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogin.Location = new Point(543, 347);
+            btnLogin.BackColor = Color.White;
+            btnLogin.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.ForeColor = Color.LimeGreen;
+            btnLogin.Location = new Point(639, 347);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(54, 27);
+            btnLogin.Size = new Size(80, 34);
             btnLogin.TabIndex = 7;
-            btnLogin.Text = "->";
+            btnLogin.Text = "Go";
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(327, 471);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(123, 20);
-            linkLabel1.TabIndex = 8;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "New Registration";
             // 
             // linkLabel2
             // 
             linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(483, 471);
+            linkLabel2.Font = new Font("Microsoft Sans Serif", 10.2F);
+            linkLabel2.Location = new Point(402, 469);
             linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(125, 20);
+            linkLabel2.Size = new Size(145, 20);
             linkLabel2.TabIndex = 9;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Forgot Password?";
             // 
             // linkLabel3
             // 
-            linkLabel3.AutoSize = true;
-            linkLabel3.Location = new Point(401, 511);
+            linkLabel3.Font = new Font("Microsoft Sans Serif", 10.2F);
+            linkLabel3.Location = new Point(380, 511);
             linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(127, 20);
+            linkLabel3.Size = new Size(214, 20);
             linkLabel3.TabIndex = 10;
             linkLabel3.TabStop = true;
-            linkLabel3.Text = "Terms & Conditions";
+            linkLabel3.Text = "Terms and Conditions";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightGray;
+            BackColor = Color.IndianRed;
             ClientSize = new Size(920, 568);
             Controls.Add(linkLabel3);
             Controls.Add(linkLabel2);
-            Controls.Add(linkLabel1);
             Controls.Add(btnLogin);
             Controls.Add(cbTC);
             Controls.Add(txtPassword);
@@ -189,7 +185,6 @@
         private TextBox txtPassword;
         private CheckBox cbTC;
         private Button btnLogin;
-        private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
         private LinkLabel linkLabel3;
     }

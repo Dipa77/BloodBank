@@ -77,6 +77,7 @@
             addNewDonorToolStripMenuItem.Size = new Size(303, 32);
             addNewDonorToolStripMenuItem.Text = "Add New Donor";
             addNewDonorToolStripMenuItem.TextAlign = ContentAlignment.MiddleLeft;
+            addNewDonorToolStripMenuItem.Click += addNewDonorToolStripMenuItem_Click;
             // 
             // updateDonorDetailsToolStripMenuItem
             // 
