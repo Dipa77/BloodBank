@@ -40,9 +40,9 @@
             txtNewAddr = new TextBox();
             txtNewCont = new TextBox();
             txtNewEmail = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            txtNewDOB = new DateTimePicker();
+            txtNewGender = new ComboBox();
+            txtNewBloodGrp = new ComboBox();
             btnNewSave = new Button();
             btnNewReset = new Button();
             btnNewExit = new Button();
@@ -126,11 +126,10 @@
             // 
             // txtNewDonor
             // 
+            txtNewDonor.AcceptsTab = true;
             txtNewDonor.Location = new Point(142, 171);
-            txtNewDonor.Multiline = true;
             txtNewDonor.Name = "txtNewDonor";
-            txtNewDonor.ReadOnly = true;
-            txtNewDonor.Size = new Size(184, 25);
+            txtNewDonor.Size = new Size(184, 27);
             txtNewDonor.TabIndex = 8;
             // 
             // txtNewAddr
@@ -138,7 +137,6 @@
             txtNewAddr.Location = new Point(524, 168);
             txtNewAddr.Multiline = true;
             txtNewAddr.Name = "txtNewAddr";
-            txtNewAddr.ReadOnly = true;
             txtNewAddr.Size = new Size(184, 25);
             txtNewAddr.TabIndex = 9;
             txtNewAddr.Text = "     ";
@@ -148,7 +146,6 @@
             txtNewCont.Location = new Point(524, 222);
             txtNewCont.Multiline = true;
             txtNewCont.Name = "txtNewCont";
-            txtNewCont.ReadOnly = true;
             txtNewCont.Size = new Size(184, 25);
             txtNewCont.TabIndex = 10;
             txtNewCont.Text = "   ";
@@ -158,37 +155,36 @@
             txtNewEmail.Location = new Point(524, 272);
             txtNewEmail.Multiline = true;
             txtNewEmail.Name = "txtNewEmail";
-            txtNewEmail.ReadOnly = true;
             txtNewEmail.Size = new Size(184, 27);
             txtNewEmail.TabIndex = 11;
             txtNewEmail.Text = "                                                                                         ";
             // 
-            // dateTimePicker1
+            // txtNewDOB
             // 
-            dateTimePicker1.Location = new Point(142, 274);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(184, 27);
-            dateTimePicker1.TabIndex = 12;
+            txtNewDOB.Location = new Point(142, 274);
+            txtNewDOB.Name = "txtNewDOB";
+            txtNewDOB.Size = new Size(184, 27);
+            txtNewDOB.TabIndex = 12;
             // 
-            // comboBox1
+            // txtNewGender
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Male", "Female", "Other" });
-            comboBox1.Location = new Point(142, 217);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(184, 28);
-            comboBox1.TabIndex = 13;
+            txtNewGender.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtNewGender.FormattingEnabled = true;
+            txtNewGender.Items.AddRange(new object[] { "Male", "Female", "Other" });
+            txtNewGender.Location = new Point(142, 217);
+            txtNewGender.Name = "txtNewGender";
+            txtNewGender.Size = new Size(184, 28);
+            txtNewGender.TabIndex = 13;
             // 
-            // comboBox2
+            // txtNewBloodGrp
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-" });
-            comboBox2.Location = new Point(524, 125);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(184, 28);
-            comboBox2.TabIndex = 14;
+            txtNewBloodGrp.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtNewBloodGrp.FormattingEnabled = true;
+            txtNewBloodGrp.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-" });
+            txtNewBloodGrp.Location = new Point(524, 125);
+            txtNewBloodGrp.Name = "txtNewBloodGrp";
+            txtNewBloodGrp.Size = new Size(184, 28);
+            txtNewBloodGrp.TabIndex = 14;
             // 
             // btnNewSave
             // 
@@ -251,9 +247,9 @@
             Controls.Add(btnNewExit);
             Controls.Add(btnNewReset);
             Controls.Add(btnNewSave);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(txtNewBloodGrp);
+            Controls.Add(txtNewGender);
+            Controls.Add(txtNewDOB);
             Controls.Add(txtNewEmail);
             Controls.Add(txtNewCont);
             Controls.Add(txtNewAddr);
@@ -289,9 +285,9 @@
         private TextBox txtNewAddr;
         private TextBox txtNewCont;
         private TextBox txtNewEmail;
-        private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private DateTimePicker txtNewDOB;
+        private ComboBox txtNewGender;
+        private ComboBox txtNewBloodGrp;
         private Button btnNewSave;
         private Button btnNewReset;
         private Button btnNewExit;

@@ -46,7 +46,7 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe Script", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.ForeColor = Color.Maroon;
-            textBox1.Location = new Point(282, 23);
+            textBox1.Location = new Point(191, 23);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
@@ -58,7 +58,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(327, 132);
+            label1.Location = new Point(240, 132);
             label1.Name = "label1";
             label1.Size = new Size(281, 31);
             label1.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 13.8F);
-            label2.Location = new Point(418, 205);
+            label2.Location = new Point(312, 202);
             label2.Name = "label2";
             label2.Size = new Size(109, 29);
             label2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 13.8F);
-            label3.Location = new Point(292, 234);
+            label3.Location = new Point(191, 231);
             label3.Name = "label3";
             label3.Size = new Size(376, 29);
             label3.TabIndex = 3;
@@ -88,7 +88,7 @@
             // txtUsername
             // 
             txtUsername.Font = new Font("Microsoft Sans Serif", 13.8F);
-            txtUsername.Location = new Point(327, 294);
+            txtUsername.Location = new Point(266, 297);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Username";
             txtUsername.Size = new Size(281, 34);
@@ -97,7 +97,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Microsoft Sans Serif", 13.8F);
-            txtPassword.Location = new Point(327, 347);
+            txtPassword.Location = new Point(266, 347);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.PlaceholderText = "Password";
@@ -108,7 +108,7 @@
             // 
             cbTC.AutoSize = true;
             cbTC.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbTC.Location = new Point(327, 406);
+            cbTC.Location = new Point(279, 407);
             cbTC.Name = "cbTC";
             cbTC.Size = new Size(288, 24);
             cbTC.TabIndex = 6;
@@ -121,7 +121,7 @@
             btnLogin.BackColor = Color.White;
             btnLogin.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.LimeGreen;
-            btnLogin.Location = new Point(639, 347);
+            btnLogin.Location = new Point(571, 348);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(80, 34);
             btnLogin.TabIndex = 7;
@@ -133,7 +133,7 @@
             // 
             linkLabel2.AutoSize = true;
             linkLabel2.Font = new Font("Microsoft Sans Serif", 10.2F);
-            linkLabel2.Location = new Point(402, 469);
+            linkLabel2.Location = new Point(312, 461);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(145, 20);
             linkLabel2.TabIndex = 9;
@@ -143,7 +143,7 @@
             // linkLabel3
             // 
             linkLabel3.Font = new Font("Microsoft Sans Serif", 10.2F);
-            linkLabel3.Location = new Point(380, 511);
+            linkLabel3.Location = new Point(307, 504);
             linkLabel3.Name = "linkLabel3";
             linkLabel3.Size = new Size(214, 20);
             linkLabel3.TabIndex = 10;
@@ -155,7 +155,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.IndianRed;
-            ClientSize = new Size(920, 568);
+            ClientSize = new Size(720, 533);
             Controls.Add(linkLabel3);
             Controls.Add(linkLabel2);
             Controls.Add(btnLogin);

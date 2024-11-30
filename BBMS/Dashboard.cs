@@ -26,8 +26,56 @@ namespace BBMS
 
         private void addNewDonorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddNewDonor addNewDonor = new AddNewDonor();    
+            AddNewDonor addNewDonor = new AddNewDonor();
             addNewDonor.Show();
+        }
+
+        private void updateDonorDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateDonor updateDonor = new UpdateDonor();
+            updateDonor.Show();
+        }
+
+        private void viewDonorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewDonor viewDonor = new ViewDonor();
+            viewDonor.Show();
+        }
+
+        private void byLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SearchbyLocation searchbyLocation = new SearchbyLocation();
+            searchbyLocation.Show();
+        }
+
+        private void byBloodGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SearchbyBloodGrp searchbyBloodGrp = new SearchbyBloodGrp();
+            searchbyBloodGrp.Show();
+        }
+
+        private void incrementStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InventInc inventInc = new InventInc();
+            inventInc.Show();
+        }
+
+        private void decreaseStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InventDec inventDec = new InventDec();
+            inventDec.Show();
+        }
+
+        private void viewInventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewInvent viewInvent = new ViewInvent();
+            viewInvent.Show();
+        }
+
+        private void deleteDonorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteDonor deleteDonor = new DeleteDonor();
+            deleteDonor.Show();     
         }
     }
 }

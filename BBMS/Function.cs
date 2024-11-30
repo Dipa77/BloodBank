@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Drawing;
 
 namespace BBMS
 {
@@ -12,12 +14,13 @@ namespace BBMS
     {
         protected static SqlConnection GetConnection() 
         {
-         SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "data source = LENOVOIP\\SQLEXPRESS;database = BBMS;integrated security = True";
+            SqlConnection conn = new SqlConnection();
+            //Data Source = LENOVOIP\SQLEXPRESS; Integrated Security = True; Connect Timeout = 30; Encrypt = False; Trust Server Certificate = True; Application Intent = ReadWrite; Multi Subnet Failover = False
+            conn.ConnectionString = "data source = LENOVOIP\\SQLEXPRESS;database = BBMS;integrated security = True; Trust Server Certificate = True;";
             return conn; 
        
         }
-        public DataSet getData(String query)
+        public DataSet getData(string query)
         {
             SqlConnection conn = GetConnection();
             SqlCommand sqlCommand = new SqlCommand();
@@ -28,7 +31,7 @@ namespace BBMS
             adapter.Fill(data);
             return data; 
         }
-        public void setData(String query)
+        public void setData(string query)
         {
             SqlConnection conn = GetConnection();
             SqlCommand sqlCommand = new SqlCommand();

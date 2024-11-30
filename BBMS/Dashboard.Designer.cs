@@ -40,6 +40,7 @@
             inventoryToolStripMenuItem = new ToolStripMenuItem();
             incrementStockToolStripMenuItem = new ToolStripMenuItem();
             decreaseStockToolStripMenuItem = new ToolStripMenuItem();
+            viewInventoryToolStripMenuItem = new ToolStripMenuItem();
             deleteDonorToolStripMenuItem = new ToolStripMenuItem();
             logOutToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
@@ -86,6 +87,7 @@
             updateDonorDetailsToolStripMenuItem.Name = "updateDonorDetailsToolStripMenuItem";
             updateDonorDetailsToolStripMenuItem.Size = new Size(303, 32);
             updateDonorDetailsToolStripMenuItem.Text = "Update Donor Details";
+            updateDonorDetailsToolStripMenuItem.Click += updateDonorDetailsToolStripMenuItem_Click;
             // 
             // viewDonorsToolStripMenuItem
             // 
@@ -94,6 +96,7 @@
             viewDonorsToolStripMenuItem.Name = "viewDonorsToolStripMenuItem";
             viewDonorsToolStripMenuItem.Size = new Size(303, 32);
             viewDonorsToolStripMenuItem.Text = "View Donors";
+            viewDonorsToolStripMenuItem.Click += viewDonorsToolStripMenuItem_Click;
             // 
             // searchBloodDonorToolStripMenuItem
             // 
@@ -112,6 +115,7 @@
             byLocationToolStripMenuItem.Name = "byLocationToolStripMenuItem";
             byLocationToolStripMenuItem.Size = new Size(247, 32);
             byLocationToolStripMenuItem.Text = "By Location";
+            byLocationToolStripMenuItem.Click += byLocationToolStripMenuItem_Click;
             // 
             // byBloodGroupToolStripMenuItem
             // 
@@ -120,10 +124,11 @@
             byBloodGroupToolStripMenuItem.Name = "byBloodGroupToolStripMenuItem";
             byBloodGroupToolStripMenuItem.Size = new Size(247, 32);
             byBloodGroupToolStripMenuItem.Text = "By Blood Group";
+            byBloodGroupToolStripMenuItem.Click += byBloodGroupToolStripMenuItem_Click;
             // 
             // inventoryToolStripMenuItem
             // 
-            inventoryToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { incrementStockToolStripMenuItem, decreaseStockToolStripMenuItem });
+            inventoryToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { incrementStockToolStripMenuItem, decreaseStockToolStripMenuItem, viewInventoryToolStripMenuItem });
             inventoryToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             inventoryToolStripMenuItem.Image = (Image)resources.GetObject("inventoryToolStripMenuItem.Image");
             inventoryToolStripMenuItem.ImageAlign = ContentAlignment.MiddleLeft;
@@ -138,6 +143,7 @@
             incrementStockToolStripMenuItem.Name = "incrementStockToolStripMenuItem";
             incrementStockToolStripMenuItem.Size = new Size(252, 32);
             incrementStockToolStripMenuItem.Text = "Increment Stock";
+            incrementStockToolStripMenuItem.Click += incrementStockToolStripMenuItem_Click;
             // 
             // decreaseStockToolStripMenuItem
             // 
@@ -146,6 +152,16 @@
             decreaseStockToolStripMenuItem.Name = "decreaseStockToolStripMenuItem";
             decreaseStockToolStripMenuItem.Size = new Size(252, 32);
             decreaseStockToolStripMenuItem.Text = "Decrease Stock";
+            decreaseStockToolStripMenuItem.Click += decreaseStockToolStripMenuItem_Click;
+            // 
+            // viewInventoryToolStripMenuItem
+            // 
+            viewInventoryToolStripMenuItem.Image = (Image)resources.GetObject("viewInventoryToolStripMenuItem.Image");
+            viewInventoryToolStripMenuItem.ImageAlign = ContentAlignment.MiddleLeft;
+            viewInventoryToolStripMenuItem.Name = "viewInventoryToolStripMenuItem";
+            viewInventoryToolStripMenuItem.Size = new Size(252, 32);
+            viewInventoryToolStripMenuItem.Text = "View Inventory";
+            viewInventoryToolStripMenuItem.Click += viewInventoryToolStripMenuItem_Click;
             // 
             // deleteDonorToolStripMenuItem
             // 
@@ -155,6 +171,7 @@
             deleteDonorToolStripMenuItem.Name = "deleteDonorToolStripMenuItem";
             deleteDonorToolStripMenuItem.Size = new Size(173, 76);
             deleteDonorToolStripMenuItem.Text = "Delete Donor";
+            deleteDonorToolStripMenuItem.Click += deleteDonorToolStripMenuItem_Click;
             // 
             // logOutToolStripMenuItem
             // 
@@ -231,5 +248,6 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem aboutOurCommunityToolStripMenuItem;
         private Label label1;
+        private ToolStripMenuItem viewInventoryToolStripMenuItem;
     }
 }

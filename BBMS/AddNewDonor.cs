@@ -34,13 +34,22 @@ namespace BBMS
 
         private void btnNewSave_Click(object sender, EventArgs e)
         {
-            if (txtNewDonor.Text != "" && txtNewCont.Text != "" && txtNewAddr.Text != "")
+            if (txtNewDonor.Text != "" && txtNewCont.Text != "" && txtNewAddr.Text != "" && txtNewDOB.Text != "" && txtNewGender.Text != "" && txtNewEmail.Text != "" && txtNewBloodGrp.Text != "")
             {
                 String newDonorName = txtNewDonor.Text;
                 String newContact = txtNewCont.Text;
                 String newAddr = txtNewAddr.Text;
+                String newGender = txtNewGender.Text;
+                String newEmail = txtNewEmail.Text;
+                
+                String newDob = txtNewDOB.Text;
+                
+                String newBloodGrp = txtNewBloodGrp.Text;
 
-                String query = "Insert into addNewDonor (newDonorName, newContact, newAddr) values('" + newDonorName + "', '" + newContact + "', '" + newAddr + "')";
+
+
+
+                String query = "Insert into addNewDonor (newDonorName, newContact, newAddr, newGender, newEmail, newDob, newBloodGrp) values('" + newDonorName + "', '" + newContact + "', '" + newAddr + "', '" + newGender+ "' , '" + newEmail + "', '" + newDob + "', '" + newBloodGrp + "')";
                 func.setData(query);
             }
             else

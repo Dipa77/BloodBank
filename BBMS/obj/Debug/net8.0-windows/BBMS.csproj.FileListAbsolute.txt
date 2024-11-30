@@ -46,8 +46,16 @@ C:\Users\LENOVO\source\repos\BBMS\BBMS\bin\Debug\net8.0-windows\runtimes\win\lib
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.csproj.AssemblyReference.cache
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.AddNewDonor.resources
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.Dashboard.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.DeleteDonor.resources
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.Form1.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.InventDec.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.InventInc.resources
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.SearchbyBloodGrp.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.SearchbyLocation.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.UpdateDonor.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.ViewDonor.resources
+C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.ViewInvent.resources
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.csproj.GenerateResource.cache
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\LENOVO\source\repos\BBMS\BBMS\obj\Debug\net8.0-windows\BBMS.AssemblyInfoInputs.cache

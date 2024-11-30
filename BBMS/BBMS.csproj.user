@@ -7,7 +7,31 @@
     <Compile Update="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DeleteDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InventDec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InventInc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SearchbyBloodGrp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SearchbyLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UpdateDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewInvent.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
